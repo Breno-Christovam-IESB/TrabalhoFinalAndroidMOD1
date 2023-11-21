@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Início do layout utilizando ConstraintLayout -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContactActivity">
+
+    <!-- Início de um LinearLayout vertical para organizar os elementos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- EditText para o nome -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome" />
+
+        <!-- EditText para o e-mail -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail: "
+            android:inputType="textEmailAddress"/>
+
+        <!-- EditText para o número de telefone -->
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone: "
+            android:inputType="phone"/>
+
+        <!-- Botão para salvar -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar" />
+    </LinearLayout>
+    <!-- Fim do LinearLayout -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Fim do ConstraintLayout -->

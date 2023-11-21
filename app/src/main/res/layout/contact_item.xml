@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Início do layout utilizando LinearLayout -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView para exibir o nome do contato -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome" />
+
+    <!-- TextView para exibir o e-mail do contato -->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail: "
+        android:inputType="textEmailAddress"/>
+
+    <!-- TextView para exibir o número de telefone do contato -->
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone: "
+        android:inputType="phone"/>
+
+
+    <!-- Button para editar o contato -->
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onEditButtonClick"
+        android:text="Editar" />
+
+    <!-- TextView para deletar o contato -->
+    <TextView
+        android:id="@+id/deleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar"
+        android:textColor="@android:color/holo_red_dark"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>
+    <!-- Fim do LinearLayout -->
